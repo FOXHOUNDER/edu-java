@@ -1,0 +1,8 @@
+{
+    "java.project.sourcePaths": [
+        "codility-exercises/src/tree-longest-zigzag",
+        "codility-exercises/src/hello-world",
+        "codility-exercises/src/all-str-combinations-upperlower",
+        "codility-exercises/src/1st-unique-element"
+    ]
+}
