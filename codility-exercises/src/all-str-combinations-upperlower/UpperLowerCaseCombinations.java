@@ -1,17 +1,21 @@
 import java.util.BitSet;
+import java.util.Arrays;
 
 public class UpperLowerCaseCombinations {
   public static void main(String[] args) throws Exception {
-    System.out.println("Hello World!");
+    String input = "abC";
+    
+    System.out.println("All input combinations for: " + input + " using Method 1 with bit vector:");
+    PrintCombinationsWithBitVector(input);
 
     return;
   }
-
+  
   /**
    * Solution ref. https://stackoverflow.com/questions/6785358/permutate-a-string-to-upper-and-lower-case
    * @param input is the string from which we want to find all combinatons.
    */
-  public void PrintCombinations(String input) {
+  public static void PrintCombinationsWithBitVector(String input) {
     char[] currentCombo = input.toCharArray();
 
     // Create a bit vector the same length as the input, and set all of the bits to
@@ -44,7 +48,7 @@ public class UpperLowerCaseCombinations {
     System.out.println(input.toLowerCase());
   }
 
-  public void DecrementBitVector(BitSet bv, int numberOfBits) {
+  public static void DecrementBitVector(BitSet bv, int numberOfBits) {
     int currentBit = numberOfBits - 1;
     while (currentBit >= 0) {
       bv.flip(currentBit);
