@@ -19,9 +19,6 @@ public class TreeLongestZigZag {
 
     int lzz = Math.max(ld, rd);
 
-    // System.out.println("I'm " + T.x + " " + dir + " and my LR LZZ depths are " +
-    // ld + " " + rd + " ... " + lzz);
-
     return lzz;
   }
 }

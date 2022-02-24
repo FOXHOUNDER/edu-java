@@ -8,6 +8,9 @@ public class UpperLowerCaseCombinations {
     System.out.println("All input combinations for: " + input + " using Method 1 with bit vector:");
     PrintCombinationsWithBitVector(input);
 
+    // do it with recursion..
+    // do it with a matrix..
+
     return;
   }
   
